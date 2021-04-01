@@ -1,12 +1,21 @@
 import React from 'react';
+import './Category.css';
+import Categories from './Categories';
 
-class Category extends React.Component {
+const Category = ()=> {
 
-    render() {
-        return (
-        <h1>Beef</h1>
+    return (
+        <div className="recommendationsWrapper">
+            <div className="recommendations">
+                <h1>{}</h1>
+                <p>Our Recommendation</p>
+                {/* <img src={}/> */}
+            </div>
+            <p></p>
+            <br/>
+        </div>
     )
-    }
+    
 }
 
 

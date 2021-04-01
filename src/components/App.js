@@ -29,15 +29,14 @@ class App extends React.Component {
                            autoPlay loop muted>
                         <source src={Stake} type="video/mp4" />
                     </video>
-                    <Route path="/" component={Header}/>
+                    <Route path="/"  component={Header}/>
                     <Route path="/" exact component={Hero}/>
-                    <Route path="/" component={Categories}/>
-                    
+                    <Route path="/" exact component={Categories}/>
                     <Switch>
-                        <Route path="/category" exact component={Category} />
+                        <Route path="/Category" component={Category} />
                     </Switch>
-                    <Route path="/" component={AboutUs}/>
-                    <Route path="/" component={ContactUs}/>
+                    <Route path="/" exact component={AboutUs}/>
+                    <Route path="/" exact component={ContactUs}/>
                     <Route path="/" component={Footer}/>
 
             </Router>
