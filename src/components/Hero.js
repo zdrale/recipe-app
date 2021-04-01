@@ -1,8 +1,9 @@
 import React, {useState, useEffect} from 'react';
 import './HeroStyle.css';
+import {Link, animateScroll as scroll} from 'react-scroll';
 
 
-function Hero() {
+const Hero = ()=> {
         useEffect(() => {
             fetchRandomMeal();
         }, []); 
@@ -17,21 +18,17 @@ function Hero() {
             setImage(randomMeal.meals);
             console.log(randomMeal.meals);
         }
-   
 
         return (
             <div className="hero">
                 <div className="about">
                     <h1>Food Recipes</h1>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,specimen book. </p>
-                    <button className="categoriesBtn">Categories</button>
+                    <Link to={"categories"} smooth={true} className="categoriesBtn">Categories</Link>
                 </div>
-              
                    {image.map(item=>(
                        <img className="herroImage" src={item.strMealThumb}/>
                    ))}
-               
-          
             </div>
            
         )

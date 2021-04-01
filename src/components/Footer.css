@@ -1,0 +1,24 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.logo {
+    height: 85px;
+    width: 85px;
+}
+
+.social {
+    list-style: none;
+}
+
+.social li{
+    display: inline;
+    margin-left: 10px;
+}
+
+.copy {
+    text-align: center;
+}

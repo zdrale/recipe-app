@@ -1,19 +1,21 @@
 .categoriesBtn {
-    border-radius: 10%;
+    border-radius: 8%;
     border-style: none;
-    background-color: rgb(178, 245, 44);
+    background-color: rgb(176, 241, 45);
     height: 30px;
     width: 100px;
-    color: white;
+    color: rgb(34, 34, 34);
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 60px;
+    text-align: center;
+    
 }
 
 .hero {
     display: flex;
     justify-content: space-between;
     padding: 150px 200px;
-   
+    
 }
 
 .herroImage{
@@ -30,6 +32,8 @@
 
 .about p {
     width: 150px;
+    font-size: 0.9rem;
+    color: white;
 }
 
 
