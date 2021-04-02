@@ -1,6 +1,6 @@
 import React from 'react';
 import './Category.css';
-import Categories from './Categories';
+
 
 const Category = ()=> {
 

@@ -2,7 +2,7 @@
     margin-top: 200px;
     padding: 30px;
     background: rgb(243,255,126);
-background: linear-gradient(90deg, rgba(243,255,126,1) 64%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(90deg, rgba(243,255,126,1) 64%, rgba(0,212,255,1) 100%);
 }
 
 .aboutUsContainer h3{
@@ -22,4 +22,27 @@ background: linear-gradient(90deg, rgba(243,255,126,1) 64%, rgba(0,212,255,1) 10
 
 .aboutUs p {
     width: 30%;
+}
+
+@media (max-width:425px) {
+    .aboutUsContainer h3{
+        text-align: center;
+        margin-left: -10px;
+    }
+
+    .aboutUs img{
+        margin-top: 90px;
+    } 
+
+    .aboutUs p{
+        margin-top: 60px;
+    } 
+}
+
+
+@media (max-width:320px) {
+    .aboutUsContainer img{
+        width: 140px;
+        height: 420px;
+    }
 }

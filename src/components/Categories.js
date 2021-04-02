@@ -35,7 +35,7 @@ const Categories = () => {
     return (
         <div className="categories" id="categories">
             {category.map(
-                item=>(<a href="/category" onClick={()=>onCategoryClick(item)}><img src={item.strCategoryThumb}/><p>{item.strCategory}</p></a>))}
+                item=>(<div onClick={()=>onCategoryClick(item)}><a href="/category"><img src={item.strCategoryThumb}/></a><p>{item.strCategory}</p></div>))}
         </div>      
     )
 }
